@@ -9,6 +9,7 @@ public class Murder extends Character {
   }
 
 
+
   public void attack(){
 
 

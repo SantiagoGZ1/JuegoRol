@@ -10,9 +10,11 @@ public class Warrior extends Character {
     this.shield = shield;
     this.sword = sword;
   }
-  public void attack(){
 
+  public int getSword() {
+    return sword;
   }
+
   public void specialAttack(){
 
   }
