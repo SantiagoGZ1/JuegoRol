@@ -17,16 +17,10 @@ public class Gameplay {
   public void endGame(){
 
   }
-  public void executeTurns(){
+  //---------------
+  public String attackEventInfo(){
+    return "hola";
 
   }
 
-
-  public void showStatus(){
-
-  }
-
-  public void showMenu(){
-
-  }
 }
