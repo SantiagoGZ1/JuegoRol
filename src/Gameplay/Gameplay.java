@@ -1,12 +1,16 @@
 package Gameplay;
 
+import Charecters.Warrior;
+
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+
 public class Gameplay {
-  private Character[] characters;
+//  private Character[] characters;
   private int turn;
   private String state;
 
-  public Gameplay(Character[] characters, int turn, String state) {
-    this.characters = characters;
+  public Gameplay(int turn, String state) {
+
     this.turn = turn;
     this.state = state;
   }
@@ -15,11 +19,6 @@ public class Gameplay {
 
   }
   public void endGame(){
-
-  }
-  //---------------
-  public String attackEventInfo(){
-    return "hola";
 
   }
 

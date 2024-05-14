@@ -1,18 +1,23 @@
 package Charecters;
 
-import Gameplay.Gameplay;
-
 public class Character {
+
+  private String personaje;
   private String name;
   private int hp;
   private int attackP;
   private int armor;
 
-  public Character(String name, int hp, int attackP, int armor) {
+  public Character(String personje, String name, int hp, int attackP, int armor) {
+    this.personaje = personje;
     this.name = name;
     this.hp = hp;
     this.attackP = attackP;
     this.armor = armor;
+  }
+
+  public String getPersonaje() {
+    return personaje;
   }
 
   public String getName() {
@@ -49,20 +54,17 @@ public class Character {
 
   //------- Action Methods
 
-  //TODO valid armor or hp
-  public void attack(Character enemy, int weapon, Gameplay gameplay){
-    System.out.println(getName() + " attack " + enemy.getName());
-    int damage = getAttackP() + weapon;
-    enemy.reciveAttack(damage, gameplay);
+  public void attack(){
   }
 
-  public void reciveAttack(int damage, Gameplay attackinfo){
+  public void reciveAttack(int damage){
     if (damage > getArmor()){
       int excessDamage = damage - getArmor();
       setArmor(0);
       setHp(getHp() - excessDamage);
-      attackinfo.attackEventInfo();
+      System.out.println(getPersonaje());
       System.out.println(String.format("%s \nArmor: %d \nHP: %d ", getName(), getArmor(), getHp()));
+
 
     }else{
       setArmor(getArmor()- damage);
@@ -72,6 +74,5 @@ public class Character {
   }
 
   public void specialAttack(){
-
   }
 }
