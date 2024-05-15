@@ -56,7 +56,7 @@ public class Main {
     warrior.specialAttack(robot);
 // crear una clase no se donde
     //poner un switch case con dowhile pa que inicie el juego
-
+  //URIBEMIAMOR
   }
 }
 
