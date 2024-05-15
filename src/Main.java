@@ -49,10 +49,13 @@ public class Main {
         "     || ||        || ||\n" +
         "     || ||        || ||\n" +
         "   __|\\_/|__    __|\\_/|__\n" +
-        "  /___n_n___\\  /___n_n___\\", "Alex", 100, 15, 5, 40);
+        "  /___n_n___\\  /___n_n___\\", "Alex", 100, 15, 5, 40, 85, 50);
     warrior.attack(robot, warrior.getSword());
-
-
+    warrior.berserkerFury();
+    warrior.attack(robot, warrior.getSword());
+    warrior.specialAttack(robot);
+// crear una clase no se donde
+    //poner un switch case con dowhile pa que inicie el juego
 
   }
 }

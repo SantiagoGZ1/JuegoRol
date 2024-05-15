@@ -4,6 +4,8 @@ import Charecters.Warrior;
 
 import javax.swing.plaf.synth.SynthOptionPaneUI;
 
+//funcionamiento del juego
+
 public class Gameplay {
 //  private Character[] characters;
   private int turn;
@@ -14,11 +16,13 @@ public class Gameplay {
     this.turn = turn;
     this.state = state;
   }
-
+//iniciar juego
   public void startGame(){
 
   }
+  //terminar juego
   public void endGame(){
+    //si armadura <= 0 && hp <= 0
 
   }
 
