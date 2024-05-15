@@ -8,6 +8,7 @@ public class Character {
   private int attackP;
   private int armor;
 
+  //constructor, getters y setters
   public Character(String personje, String name, int hp, int attackP, int armor) {
     this.personaje = personje;
     this.name = name;
